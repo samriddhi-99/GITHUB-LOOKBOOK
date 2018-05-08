@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github look book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+#image img{
+  width:200px;
+}
+#name{
+  padding: 0px;
+      margin:0px;
+}
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+		.tut{
+      height: 200px;
+      width: 200px;
+    }
+    .tut1{
+      width:200px;
+      height: 80px;
+     padding: 0px;
+      margin:0px;
+      position:relative;
+    }
+    .ty{
+			margin: 0px!important;
+			padding: 0px! important;
+
+		}
+		.tw{
+			top:50%!important;
+			
+			height:200px;
+			
+			margin: -100 -275 ;
+			
+		}
+   
+
+		body
+		{
+			background-image: url("https://i.pinimg.com/originals/74/b3/5f/74b35f299d3a4458a1ebd55558407bf8.jpg");
+			background-repeat: repeat;
+			background-size: cover;
+		}
+		::placeholder {
+    		color: black;
+    		opacity: 1; 
+		}
+	</style>
+</head>
+<body>
+   <div class="row ty">
+        <div class="col l12 s12 m12 ty">
+          <div class="card blue-grey darken-4 ty">
+            <div class="card-content white-text">
+              <span class="card-title" style="text-align: center">GITHUB LOOK</span>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="firstpage" >      
+
+     
+       <div class="row ty">
+        <div class="col l3 m1 s1"></div>
+      <div class="col l6 m10 s10">
+        <div class="card-panel  cyan accent-1 tw ">
+          
+       
+      <div class="row ">
+        
+        <div class="col l12 m12 s12">
+    <form class="col l12 m12 s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Github Username"  id="username" type="text" class="validate">
+          
+        </div>
+    </div>
+       
+      <div class="row">
+        <center>
+        <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action" id="submit">Submit
+    <i class="material-icons right">send</i>
+  </button>
+  </center>
+
+      </div>
+      
+      
+    </form>
+    </div>
+  </div>
+</div>
+ </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="preloader2" style="display: none">
+      <div class="row">
+
+     <div class="progress">
+      <div class="indeterminate blue-grey darken-4 "></div>
+  </div>
+
+</div>
+ <div class="row">
+
+     <div class="progress">
+      <div class="indeterminate blue-grey darken-4 "></div>
+  </div>
+
+</div>
+ <div class="row">
+
+     <div class="progress">
+      <div class="indeterminate blue-grey darken-4 "></div>
+  </div>
+
+</div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+     <div id="error" style="display: none">
+      <br><br>
+        <div class="row">
+          <div class="col l4 m3 s2"></div>
+    <div class="col l4 m6 s8">
+      <div  style="border:4px solid red;" class="card-panel cyan accent-1">
+        <span class="black-text"><center><b>USER NOT FOUND!!!</b></center>
+        </span>
+        <br>
+
+        <center>
+        <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action" id="submiterror">Back
+    <i class="material-icons right">send</i>
+  </button>
+  </center>
+
+      
+      </div>
+    </div>
+  </div>
+   
+      </div>
+
+      <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+ 
+
+   
+    <div id="secondpage" style="display: none">
+   
+      <br>
+      <br>
+      <div class="row">
+        <div class="col l4 m2 s0"></div>
+       <div class="col l4 m8 s12">
+      <div class="container tut ">
+        <div id="image"></div>
+  
+  <div class="content tut1">
+    <h5 id="name"></h5>
+    
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col l4 m6 s12">
+    <div class="card teal accent-1 " style="border:solid #263238 2px" >
+        <div class="card-content white-text" >
+          <span class="card-title " style="color: #263238 " >Followers - <span id="followersnum"></span></span>
+          <p style="color: #263238" id="Followers"></p>
+        </div>
+       
+      </div>
+  </div>
+  <div class="col l4 m6 s12">
+    <div class="card teal accent-1"  style="border:solid #263238 2px">
+        <div class="card-content white-text">
+          <span class="card-title " style="color: #263238">Following - <span id="followingnum"></span></span>
+          <p style="color: #263238" id="Following"></p>
+        </div>
+        
+      </div>
+  </div>
+  <div class="col m3"></div>
+  <div class="col l4 m6 s12">
+    <div class="card teal accent-1" style="border:solid #263238 2px">
+        <div class="card-content white-text">
+          <span class="card-title "  style="color: #263238">Repositories - <span id="reponum"></span></span>
+          <p style="color: #263238" id="repository"></p>
+        </div>
+       
+      </div>
+  </div>
+</div>
+<div class="row">
+    
+        <center>
+        <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action" id="back">Back
+    <i class="material-icons right">send</i>
+  </button>
+  </center>
+     
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+<script type="text/javascript">
+  $('#submit').click(function(event) {
+    if($("#username").val()==''){
+          
+          alert("Enter the username!!");
+     }
+     else{
+    event.preventDefault();
+    var user=$('#username').val()
+    var following='https://api.github.com/users/'+user+'/following';
+    var followers='https://api.github.com/users/'+user+'/followers';
+    var rep='https://api.github.com/users/'+user+'/repos';
+    var url='https://api.github.com/users/'+user;
+
+    console.log('submitted username');
+    $.ajax({
+      type:'get',
+      url: url,
+      beforeSend: function() {
+        console.log('before');
+        $("#firstpage").hide("slow");
+        $("#preloader2").show("slow");        
+      }
+    }).done(function(data){
+
+      $('#image').html("<img src='"+data.avatar_url+"'>");
+      $('#name').html(data.name);
+     
+      $.ajax({
+        type:'get',
+        url: rep,
+        }).done(function(data) {
+            console.log(data);
+            var repo='';
+            if(data.length==0) {
+              repo="No Repositories";
+            }
+            else
+            {
+            for(var i=0;i<data.length;i++){
+              repo+="<li>"+data[i].name+"</li>\n"
+            }
+          }
+
+            $('#repository').html(repo);
+            $('#reponum').html(data.length);
+            console.log(repo);
+            
+            $.ajax({
+            type:'get',
+            url: followers,
+            }).done(function(data) {
+              console.log(data);
+              var fol='';
+              if(data.length==0){
+
+               fol="No followers";
+             }
+              else
+              {
+              for(var i=0;i<data.length;i++){
+                fol+="<li>"+data[i].login+"</li>\n"
+              }
+            }
+              $('#Followers').html(fol);
+              $('#followersnum').html(data.length);
+              console.log(fol);
+              //--------folowing
+              $.ajax({
+                type:'get',
+                url: following,
+              }).done(function(data) {
+                console.log(data);
+                var fol2='';
+                if(data.length==0)
+                 {fol2="No followers";
+             }
+                else
+                {
+                  for(var i=0;i<data.length;i++){
+                    fol2+="<li>"+data[i].login+"</li>\n"
+                  }
+                }
+                $('#Following').html(fol2);
+                $('#followingnum').html(data.length);
+                console.log(fol2);
+                $("#preloader2").hide("slow");
+                $("#error").hide("slow");
+
+                $("#secondpage").show("slow");  
+              })
+            })
+        })
+      }).catch(function(err)
+      {  
+        console.log("error")     
+            $("#preloader2").hide("slow");
+            $("#secondpage").hide("slow");
+            $('#error').show('slow');
+
+          });
+    }
+    });
+  $('#submiterror').click(function() {
+    $('#username').val('');
+    $('#error').hide('slow');
+    $("#preloader2").hide("slow");
+    $("#secondpage").hide("slow");
+    $("#firstpage").show("slow");
+
+    
+})
+  $('#back').click(function() {
+    $('#username').val('');
+    $('#error').hide('slow');
+    $("#preloader2").hide("slow");
+    $("#secondpage").hide("slow");
+    $("#firstpage").show("slow");
+})
+</script>
+
+ 
+
+</body>
+</html>
